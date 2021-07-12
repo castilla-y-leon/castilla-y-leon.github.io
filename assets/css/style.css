@@ -402,9 +402,16 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 @media (max-width: 780px) {
-  .custom-navbar > .container {
-    padding-right: 0;
+  .imagen {
+    width: 100%;
     padding-left: 0;
+  }
+}
+
+@media (max-width: 780px) {
+  .texto {
+    width: 100%;
+    padding-left: 1;
   }
 }
 
