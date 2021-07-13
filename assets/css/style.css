@@ -92,10 +92,6 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   transition: .3s all ease-in-out;
 }
 
-.item .item-wrap img {
-  transition: .3s transform ease;
-  transform: scale(1);
-}
 
 .item .item-wrap > .work-info {
   position: absolute;
@@ -126,9 +122,6 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   text-decoration: none;
 }
 
-.item .item-wrap:hover img {
-  transform: scale(1.05);
-}
 
 .item .item-wrap:hover:after {
   opacity: 1;
@@ -146,21 +139,6 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   background: #eceff2;
 }
 
-.testimonial-wrap .testimonial {
-  text-align: center;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.testimonial-wrap .testimonial img {
-  border-radius: 50%;
-  width: 120px;
-  margin: 0 auto 30px auto;
-}
-
-.testimonial-wrap .testimonial blockquote p {
-  font-size: 20px;
-}
 
 .h3 {
   font-size: 20px;
@@ -195,28 +173,6 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   background: #000;
 }
 
-.testimonials-slider .swiper-pagination {
-  margin-top: -60px;
-  position: relative;
-}
-
-.testimonials-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: rgba(13, 30, 45, 0.3);
-  opacity: 1;
-}
-
-.testimonials-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: rgba(13, 30, 45, 0.6);
-}
-
-.sticky-content {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  /* required */
-}
 
 .list-line li {
   margin-bottom: 10px;
@@ -391,7 +347,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 @media (max-width: 780px) {
-  .texto {
+  .section {
     width: 100%;
     padding-left: 1;
   }
@@ -523,9 +479,9 @@ img {
 .section {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20%;
+  padding-left: 10%;
   padding-top: 7%;
-  padding-right: 20%;
+  padding-right: 10%;
 }
 
 .apple-popup .mapboxgl-popup-content {
