@@ -74,21 +74,6 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   margin-bottom: 30px;
 }
 
-.imagen {
-    display: block;
-    display: block;
-    margin-left: 16%;
-    margin-right: auto;
-    max-width:100%;
-    height:auto;
-}
-
-
-  .texto{
-    width: 60%;
-    text-align: left;
-    margin-left: 16%;
-  }
 
 .item .item-wrap {
   display: block;
@@ -531,3 +516,13 @@ h1, h2, h3, h4, h5, h6, .font-heading {
       bottom: 0;
       width: 100%;
     }
+.imagen {
+    margin-left: 16%;
+    max-width:100%;
+    height:auto;
+}
+  .texto{
+    width: 60%;
+    text-align: left;
+    margin-left: 16%;
+  }
