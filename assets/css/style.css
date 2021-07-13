@@ -11,7 +11,7 @@
 body {
   font-family: "Inconsolata", monospace;
   color: #0d1e2d;
-  text-align: justify;
+  text-align: left;
 
 }
 
@@ -24,7 +24,12 @@ a:hover {
   color: #D58F8F;
 }
 
-h1, h2, h3, h4, h5, h6, .font-heading {
+h1 {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+h2, h3, h4, h5, h6, .font-heading {
   font-family: "Raleway", sans-serif;
 }
 
