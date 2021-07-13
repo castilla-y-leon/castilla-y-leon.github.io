@@ -522,9 +522,12 @@ img {
         width: 15%; 
         object-fit: contain;
         float: right;
-
-
   }
+
+#me-div {
+        width: 35%; 
+        object-fit: contain;
+        float: center;
 
 .nota {
   font-family: "Inconsolata", monospace;
