@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
+  
+
+  <title>Salarios</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyPortfolio - v4.3.0
+  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+    <!-- Load the `mapbox-gl-geocoder` plugin. -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css">
+   
+  <!-- Promise polyfill script is required -->
+  <!-- to use Mapbox GL Geocoder in IE 11. -->
+  <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+  <!-- ======= Navbar ======= -->
+  
+  <nav class="navbar navbar-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"></a>
+      <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
+        <span></span>
+      </a>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <section class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div data-aos="fade-up">
+            <h1>¿Cuánto cobran los alcaldes y alcaldesas de Castilla y León?</h1>
+            <br>
+            <p style="font-size: 120%;">Castilla y León está formada por <strong>2.248 municipios</strong>. De hecho, es la región con más municipios de España, seguida por Cataluña (947).
+              Cada uno de estos ayuntamientos cuenta con un alcalde o alcaldesa, cuyo salario queda reflejado cada año en la base de datos del sistema de <a href="https://www.mptfp.gob.es/portal/funcionpublica/funcion-publica/ispa/estadist_ISPA/informac_estad_2019.html">Información Salarial Puestos de la Administración (ISPA)</a>. Los más recientes y que se muestran en este espacio corresponden al ISPA 2020 y son del ejercicio 2019 <a href="https://www.mptfp.gob.es/dam/es/portal/funcionpublica/funcion-publica/ispa/ispa_2020/retrib_2019/retribuciones_alcaldes.xlsx.xlsx">(descarga los datos)</a>.
+            </p>
+            <br>
+            <br>
+            <br>
+            <h1 style="font-size: 130%;">Mapa de las retribuciones de los ayuntamientos y del número de habitantes</h1>
+            <p>Cuanto más intenso es el morado, mayor es la retribución. Cuanto más intenso es el azul, mayor és la población</p>
+            <br>
+
+            <div>
+                <img src="assets/img/mapa_entero.jpg">
+            </div>   
+            <br> 
+
+          </div>
+        </div>
+      </div>
+
+    
+          <div data-aos="fade-up">
+            
+            <p>Existen tres tipos de categorías a la hora de clasificar la actividad de los alcaldes y alcaldesas: <strong>sin dedicación</strong>, <strong>dedicación parcial</strong> o <strong>dedicación exclusiva</strong>. Sin embargo, los salarios anuales que perciben pueden variar mucho de un municipio a otro. El número de habitantes de cada población tiene una correlación con el salario, aunque algunas veces no es el caso.</p>
+         
+            <p>Hay 73 municipios cuya persona responsable tiene dedicación exclusiva, un 3,2% del total; es indispensable mencionar que Castilla y León es la región con una de las mayores tasas de despoblación del país, y por ello muchos pueblos se ven cada vez más reducidos y envejecidos. POr ello, el tiempo y dedicación invertidos no serán iguales en ..... que en ......., y es por ello que existen las categorías de dedicación.</p>
+
+
+            <img src="assets/img/scatterplot.jpg">
+
+
+            </div>
+            </div>
+            </div>
+            <br>
+          <br>
+          <br>
+
+
+          <div data-aos="fade-up">
+
+            <p>Dedicación parcial es una jornada que declaran 185 ediles, el 8,2%. La gran mayoría de los cargos políticos, 1.696, ejercen de alcaldes pero sin dedicación. Es decir, que perciben su salario y hacen las funciones básicas pero no declaran invertir tiempo en ejercer como alcaldes y alcaldesas. </p>
+          
+            <p>Eso no obstante, algunos alcaldes registrados como “sin dedicación” son responsables de poblaciones relativamente pobladas como Laguna de Duero (22.765 habitantes), Ciudad Rodrigo (12.261) Astorga (10.741) o El Espinar (9.086).  El sueldo anual de dichos alcaldes apenas supera los 8.000 euros. </p>
+             <br>
+             <br>
+
+             <h4>Explora el mapa </h4>
+                <img id="leyenda-div" src="assets/img/leyenda.jpg" width="20" height="10" alt="leyenda">
+
+             <div id='map'></div>
+
+
+             <div id="geocoder" class="geocoder"></div>
+             <br>
+             <p style="color:grey;font-size:80%">Se han omitido los municipios cuyas retribuciones aparecen "sin remitir".
+             <br>
+             <br>
+            
+          </div>
+        </div>
+      </div>
+
+          <div data-aos="fade-up">
+            
+            <p>Existen tres tipos de categorías a la hora de clasificar la actividad de los alcaldes y alcaldesas: sin dedicación, dedicación parcial o dedicación exclusiva. Sin embargo, los salarios anuales que perciben pueden variar mucho de un municipio a otro. El número de habitantes de cada población tiene una correlación con el salario, aunque algunas veces no es el caso.</p>
+         
+            <p>Hay 73 municipios cuya persona responsable tiene dedicación exclusiva, un 3,2% del total; es indispensable mencionar que Castilla y León es la región con una de las mayores tasas de despoblación del país, y por ello muchos pueblos se ven cada vez más reducidos y envejecidos. POr ello, el tiempo y dedicación invertidos no serán iguales en ..... que en ......., y es por ello que existen las categorías de dedicación.</p>
+          
+            Dedicación parcial es una jornada que declaran 185 ediles, el 8,2%. La gran mayoría de los cargos políticos, 1.696, ejercen de alcaldes pero sin dedicación. Es decir, que perciben su salario y hacen las funciones básicas pero no declaran invertir tiempo en ejercer como alcaldes y alcaldesas. </p>
+          
+            Eso no obstante, algunos alcaldes registrados como “sin dedicación” son responsables de poblaciones relativamente pobladas como Laguna de Duero (22.765 habitantes), Ciudad Rodrigo (12.261) Astorga (10.741) o El Espinar (9.086).  El sueldo anual de dichos alcaldes apenas supera los 8.000 euros. </p>
+     
+      </div>
+            <script>
+              mapboxgl.accessToken = 'pk.eyJ1IjoibGF1cmFuYXZhcnJvIiwiYSI6ImNrZzBwNzA1eDBqYzUzMnFpemRzZGc1c3MifQ.ftDfRnXbx1RzDaZAOkC3tg';
+              var map = new mapboxgl.Map({
+                container: 'map', // Specify the container ID
+                style: 'mapbox://styles/lauranavarro/ckqz4ohbfbp7r19n2sto3dccn', // Specify which map style to use
+                center: [-4.685103173259,42.0046502], // Specify the starting position [lng, lat]
+                zoom: 6.5 // Specify the starting zoom
+              });
+
+
+              map.on('load', function() {
+
+              // Create a popup, but don't add it to the map yet.
+                  var popup = new mapboxgl.Popup({
+                    className: "apple-popup", 
+                    closeButton: false,
+                    closeOnClick: false
+                  });
+
+                  function showPopup(e) {
+                // Updates the cursor to a hand (interactivity)
+                    map.getCanvas().style.cursor = 'pointer';
+
+                // Show the popup at the coordinates with some data
+                    popup.setLngLat(e.lngLat)
+                      .setHTML(checkEmpty('<h5>' + e.features[0].properties.ayuntamiento + '</h5>' + '<p>' + "Dedicación:" + " " + '<strong>' + e.features[0].properties.dedicacion + '</strong>' + '<br>' + "Salario anual:"+ " " + e.features[0].properties.salario + "€" + '<br>' + "Población:"+ " " +e.features[0].properties.poblacion + " habitantes" + '</p>'))
+                      .addTo(map);
+                  }
+
+                  function hidePopup() {
+                    map.getCanvas().style.cursor = '';
+                    popup.remove();
+                  }
+
+                  function checkEmpty(info) {
+                    return (info) ? info : "No data";
+                  }
+
+                  // CHANGE: Add layer names that need to be interactive
+                  map.on('mouseenter', 'municipios-salarios-sin-null-3lort7', showPopup);
+                  map.on('mouseleave', 'municipios-salarios-sin-null-3lort7', hidePopup);
+                  map.on('mouseenter', 'municipios-salarios-sin-null-3lort7', showPopup);
+                  map.on('mouseleave', 'municipios-salarios-sin-null-3lort7', hidePopup);
+
+                });
+
+                // Add the control to the map.
+                  map.addControl(
+                  new MapboxGeocoder({
+                  accessToken: mapboxgl.accessToken,
+                  mapboxgl: mapboxgl
+                  })
+                  );
+
+                  document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
+
+
+
+
+          </script>
+
+
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
