@@ -526,3 +526,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     text-align: left;
     margin-left: 16%;
   }
+.section {
+  padding-left: 15%;
+  padding-top: 15%;
+}
