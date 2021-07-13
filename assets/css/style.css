@@ -16,12 +16,12 @@ body {
 }
 
 a {
-  color: #777;
+  color: #9B5959;
   text-decoration: none;
 }
 
 a:hover {
-  color: #000;
+  color: #D58F8F;
 }
 
 h1, h2, h3, h4, h5, h6, .font-heading {
@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .section {
-  padding: 7rem 0;
+  padding: 9rem 0;
 }
 
 .filters a {
